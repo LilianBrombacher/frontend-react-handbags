@@ -4,6 +4,7 @@ import bag_1 from './assets/bag_1.png'
 import bag_2 from './assets/bag_2.png'
 import bag_3 from './assets/bag_3.png'
 import bag_4 from './assets/bag_4.png'
+import Product from "./assets/constants/components/Product.jsx";
 
 function App() {
   return (
@@ -24,30 +25,10 @@ function App() {
               </Button>
           </nav>
             <main>
-                <article>
-                    <span>Best seller</span>
-                    <img src={bag_1} alt="tas 1"/>
-                    <p>The handy bag</p>
-                    <h4>€400,-</h4>
-                </article>
-                <article>
-                    <span>Best seller</span>
-                    <img src={bag_2} alt="tas 2"/>
-                    <p>The stylish bag</p>
-                    <h4>€250,-</h4>
-                </article>
-                <article>
-                    <span>Best seller</span>
-                    <img src={bag_3} alt="tas 3"/>
-                    <p>The simple bag</p>
-                    <h4>€300,-</h4>
-                </article>
-                <article>
-                    <span>Best seller</span>
-                    <img src={bag_4} alt="tas 4"/>
-                    <p>The trendy bag</p>
-                    <h4>€150,-</h4>
-                </article>
+                <Product imageSrc={bag_1} altText="tas 1" name="The handy bag" price="€400,-" />
+                <Product imageSrc={bag_2} altText="tas 2" name="The stylish bag" price="€250,-" />
+                <Product imageSrc={bag_3} altText="tas 3" name="The simple bag" price="€300,-" />
+                <Product imageSrc={bag_4} altText="tas 4" name="The trendy bag" price="€150,-" />
             </main>
         </div>
 
